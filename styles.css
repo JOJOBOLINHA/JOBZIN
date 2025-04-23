@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #ffffff;
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo:#25262b;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #feed2f;
 }
 
 body {
@@ -11,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #25262B;
+    background-color: #ffffff;
 }
 .nav-img{
     width: 20vw;
@@ -163,4 +166,24 @@ h2 {
 }
 .apresenta-lista{
     display: none;
+}
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color:var(--alto-contraste-texto);
+}
+.alto-contraste header, .alto-contraste footer, .alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .botao-inicio, .alto-contraste .formulario button, .alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+.alto-contraste #tropicalia{
+    background: none;
+}
+.alto-contraste #galeria{
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria{
+    background: none;
 }
